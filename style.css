@@ -8,10 +8,11 @@
     /* --standard-border: 1px solid rgb(110, 7, 7); */
     --standard-border: 1px solid darkgreen;
     --standard-border-radius: 10px;
+    --feed-item-bg: rgb(255, 255, 255, 0.15);
 
     --main-thematic-bg-color: rgb(255, 255, 255, 0.85);
     --main-thematic-bg-color-transparent: rgb(2, 0, 36, 0);
-    --contact-card-bg-color:  rgb(255, 255, 255, 0.85);
+    --contact-card-bg-color:  rgb(255, 255, 255, 0.9);
     --title-font-size: 2.1em;
     --title-font-color:rgb(110, 7, 7) ;
     --title-border: 2px solid lime;
@@ -52,6 +53,7 @@ img {
     border: 1px solid white;
     border-radius: var(--standard-border-radius);
     box-shadow: var(--img-shadow);
+    /* z-index: 1 ; */
 }
 
 img:hover {
@@ -92,10 +94,20 @@ img:hover {
     letter-spacing: 1px;
 }
 
+.intro-pictures {
+    display: grid;
+    justify-items: center;
+}
+
+.intro-pictures img {
+    z-index: 4;
+}
+
 .name {
     font-size: 1.9em;
     text-decoration: underline;
     text-decoration-thickness: 1px;
+    z-index: 0;
     /* font-weight: 700; */
 }
 
@@ -113,6 +125,7 @@ img:hover {
     align-self: center;
     width: fit-content;
     text-align: start;
+    z-index: 1;
 
 }
 
@@ -163,6 +176,7 @@ img:hover {
     padding: 10px;
     padding-top: 25px;
     width: 85vw;
+    background-color: var(--feed-item-bg);
 }
 
 .no-bullets {
@@ -170,6 +184,7 @@ img:hover {
     list-style: none;
     display: grid;
     gap: 2vh;
+    
 }
 
 .licenses {
@@ -188,6 +203,7 @@ img:hover {
     animation: slide-left 1.9s forwards;
     font-size: 1.2em;
 }
+
 
 
 .footer {
