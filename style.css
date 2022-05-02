@@ -6,7 +6,7 @@
     --root-font-shadow: 1px 1px 1px black;
     --a-color: aqua;
     /* --standard-border: 1px solid rgb(110, 7, 7); */
-    --standard-border: 1px solid darkgreen;
+    --standard-border: 1px solid rgb(110, 7, 7);
     --standard-border-radius: 10px;
     --feed-item-bg: rgb(255, 255, 255, 0.15);
 
@@ -14,8 +14,8 @@
     --main-thematic-bg-color-transparent: rgb(2, 0, 36, 0);
     --contact-card-bg-color:  rgb(255, 255, 255, 0.9);
     --title-font-size: 2.1em;
-    --title-font-color:rgb(110, 7, 7) ;
-    --title-border: 2px solid lime;
+    --title-font-color: darkgreen ;
+    --title-border: 2px solid rgb(110, 7, 7);
     --img-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
@@ -94,6 +94,12 @@ img:hover {
     letter-spacing: 1px;
 }
 
+.byline {
+    font-size: 1.6em;
+    font-weight: 600;
+    padding: 1vh;
+}
+
 .intro-pictures {
     display: grid;
     justify-items: center;
@@ -107,6 +113,8 @@ img:hover {
     font-size: 1.9em;
     text-decoration: underline;
     text-decoration-thickness: 1px;
+    text-decoration-color: lime;
+    text-underline-offset: 3px;
     z-index: 0;
     /* font-weight: 700; */
 }
@@ -135,9 +143,10 @@ img:hover {
 }
 
 .feed-title {
-    font-size: 1.6em;
+    font-size: 1.9em;
+    padding: 3vh;
     text-align: center;
-    width: 90%;
+    width: 100%;
     background-color: var(--main-thematic-bg-color);
     border-radius: 5px;
 
@@ -287,6 +296,8 @@ img:hover {
     to {
         text-decoration: underline;
         text-decoration-thickness: 1px ;
+        text-underline-offset: 2px;
+        text-decoration-color: lime ;
         border: var(--title-border);
     }
      
@@ -342,8 +353,8 @@ img:hover {
 
     .feed-title {
         /* font-size: 1.3em; */
-        width: 65%;
-        padding: 0.7vw;
+        /* width: 65%; */
+        /* padding: 0.7vw; */
     }
 
     .feed-item {
