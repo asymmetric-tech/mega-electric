@@ -231,15 +231,20 @@ img:hover {
     font-size: 1.3em;
 }
 
-#lilChris {
-    width: 30vw;
-    height: auto;
-    justify-self: center;
-}
-
 .clicked-image {
     -webkit-transform:scale(1.5);
     transform:scale(1.5);
+}
+
+.credits {
+    text-align: center;
+    background-color: rgb(22, 21, 21);
+    color: antiquewhite;
+    font-size: smaller;
+    position: relative;
+    bottom: 0;
+    padding: 3px 7px;
+    /* width: 150%; */
 }
 
 @keyframes link-trans {
