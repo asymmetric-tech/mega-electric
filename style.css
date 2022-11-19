@@ -79,7 +79,7 @@ img:hover {
     z-index: 1;
     
     
-    animation: title-grow 3.5s forwards
+    animation: title-grow 4s forwards
 }
 
  .header {
@@ -301,7 +301,7 @@ img:hover {
     to {
         text-decoration: underline;
         text-decoration-thickness: 1px ;
-        text-underline-offset: 2px;
+        text-underline-offset: 4px;
         text-decoration-color: lime ;
         border: var(--title-border);
     }
